@@ -1,0 +1,25 @@
+[project]
+name = "scrap-rakuten"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Glhou", email = "g.louedec@live.fr" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anyio>=4.16.0",
+    "curl-cffi>=0.17.0",
+    "loguru>=0.8.0",
+    "pydantic>=2.14.3",
+    "scrapling[all]>=0.5.1",
+    "sqlalchemy>=2.1.9",
+    "trafilatura>=2.3.1",
+]
+
+[project.scripts]
+scrap-rakuten = "scrap_rakuten:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
